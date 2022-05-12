@@ -27,7 +27,7 @@ jobs:
           npm run build --if-present
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./* -qr -x "node_modules/*" "src/*" "test/*" "package-lock.json" "nest-cli.json" "tsconfig.json" "tsconfig.build.json"
+        run: zip release.zip ./* -qr -x "node_modules/*" "src/*" "test/*" "package-lock.json" "nest-cli.json" "tsconfig.json" "tsconfig.build.json" "README.md"
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
