@@ -52,4 +52,4 @@ jobs:
           app-name: 'basic-nest-app'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3DBDAC51AB544E5FA7B1AB40C635F004 }}
-          package: .
+          package: release.zip
